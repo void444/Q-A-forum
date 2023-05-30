@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="admin.css">
+  <script src="expand-text.js"></script>
+  <script src="modal.js"></script>
+  <title>Admin-Page</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="admin.html">
+          <img src="logo.png" alt="Logo" width="60" height="60">
+          <b> Q&A PLATFORM FOR STUDENTS</b>
+        </a>
+        <div class="navbar-collapse justify-content-center">
+          <span class="navbar-text">
+            <h3><b><i>ADMIN PANEL</i></b></h3>
+          </span>
+        </div>
+        <div class="navbar-collapse justify-content-end">
+          <div class="profile-icon">
+            <img src="profile.png" alt="Profile" class="d-inline-block align-text-top">
+            <div class="logout-option">
+              <a href="signin.html"> Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-2 sidebar">
+        <ul class="list-unstyled">
+          <li class="sidebar-item">
+            <a href="#">Manage Users</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#">Manage Posts</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#">Setting</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#">Add Questions</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#">Give Answer</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#">View Profile</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#">Rewards</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="content-wrapper">
+ 
+    <div class="content">
+     
+      <div class="question-post">
+          <h3><a href="profile.html"><img src="profile.png" alt="Profile Icon" class="profile-icon"></a>Susan Timalsina</h3>
+          <p class="question-category">User-Category:Teacher</p>
+          <p class="question-category">Question-Category:XYZ</p>
+          <p> May 26, 2023</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan tortor et lacus vehicula, ac
+            tincidunt velit porttitor. Mauris auctor, erat id consectetur aliquam, lacus nisi tincidunt dui, at
+            elementum elit tortor sed neque.</p>
+          <div class="question-icons">
+            <a href="#"><i class="bi bi-arrow-up-circle-fill">upvote(10)</i></a>
+            <a href="#"><i class="bi bi-flag-fill"></i>report</a>
+            <a href="#"><i class="bi bi-star-fill"></i>rate</a>
+          </div>
+          <!-- <button class="btn btn-primary"> Give Answer</button> -->
+
+
+          <button id="answer-btn">Give Answer</button>
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <textarea id="answer-textarea" class="modal-textarea" placeholder="Enter your answer"></textarea>
+              <button id="submit-btn">Submit</button>
+            </div>
+          </div>
+          <script src="script.js"></script>
+
+
+        </div>
+
+        <div class="question-footer">
+          <div class="answer-count">
+            <span class="count">5</span>
+            <span class="label">answers</span>
+          </div>
+          <a href="#" class="see-answer-button">See all Answers</a>
+        </div>
+
+        <div class="answer-section">
+          <p class="question-category">Date:May 26, 2023, Answer by:</p>
+          <h3><a href="profile.html"><img src="profile.png" alt="Profile Icon" class="profile-icon"></a>Basant Adhikari</h3>
+          <p class="question-category">User-Category:Teacher</p>
+          <div class="question-post">
+            <!-- <div class="question-icons"> -->
+            <a href="#"><i class="bi bi-arrow-up-circle-fill">upvote(50)</i></a>
+            <a href="#"><i class="bi bi-flag-fill"></i>report</a>
+            <a href="#"><i class="bi bi-star-fill"></i>rate</a>
+            <!-- </div> -->
+          </div>
+          <p class="answer-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan tortor
+            et lacus vehicula, ac tincidunt velit porttitor. Mauris auctor, erat id consectetur aliquam, lacus nisi
+            tincidunt dui, at elementum elit tortor sed neque.<span class="see-more">See More</span></p>
+        </div>
+       
+
+        <div class="question-post">
+          <h3><a href="profile.html"><img src="profile.png" alt="Profile Icon" class="profile-icon"></a>Susan Timalsina</h3>
+          <p class="question-category">User-Category:Teacher</p>
+          <p class="question-category">Question-Category:XYZ</p>
+          <p> May 26, 2023</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan tortor et lacus vehicula, ac
+            tincidunt velit porttitor. Mauris auctor, erat id consectetur aliquam, lacus nisi tincidunt dui, at
+            elementum elit tortor sed neque.</p>
+          <div class="question-icons">
+            <a href="#"><i class="bi bi-arrow-up-circle-fill">upvote(10)</i></a>
+            <a href="#"><i class="bi bi-flag-fill"></i>report</a>
+            <a href="#"><i class="bi bi-star-fill"></i>rate</a>
+          </div>
+          <!-- <button class="btn btn-primary"> Give Answer</button> -->
+
+
+          <button id="answer-btn">Give Answer</button>
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <textarea id="answer-textarea" class="modal-textarea" placeholder="Enter your answer"></textarea>
+              <button id="submit-btn">Submit</button>
+            </div>
+          </div>
+          <script src="script.js"></script>
+
+        </div>
+
+        <div class="question-footer">
+          <div class="answer-count">
+            <span class="count">5</span>
+            <span class="label">answers</span>
+          </div>
+          <a href="#" class="see-answer-button">See all Answers</a>
+        </div>
+
+        <div class="answer-section">
+          <p class="question-category">Date:May 26, 2023, Answer by:</p>
+          <h3><a href="profile.html"><img src="profile.png" alt="Profile Icon" class="profile-icon"></a>Basant Adhikari</h3>
+          <p class="question-category">User-Category:Teacher</p>
+          <div class="question-post">
+            <!-- <div class="question-icons"> -->
+            <a href="#"><i class="bi bi-arrow-up-circle-fill">upvote(50)</i></a>
+            <a href="#"><i class="bi bi-flag-fill"></i>report</a>
+            <a href="#"><i class="bi bi-star-fill"></i>rate</a>
+            <!-- </div> -->
+          </div>
+          <p class="answer-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan tortor
+            et lacus vehicula, ac tincidunt velit porttitor. Mauris auctor, erat id consectetur aliquam, lacus nisi
+            tincidunt dui, at elementum elit tortor sed neque.<span class="see-more">See More</span></p>
+        </div>
+        <script src="script.js"></script>
+        <div class="question-post">
+          <h3><a href="profile.html"><img src="profile.png" alt="Profile Icon" class="profile-icon"></a>Susan Timalsina</h3>
+          <p class="question-category">User-Category:Teacher</p>
+          <p class="question-category">Question-Category:XYZ</p>
+          <p> May 26, 2023</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan tortor et lacus vehicula, ac
+            tincidunt velit porttitor. Mauris auctor, erat id consectetur aliquam, lacus nisi tincidunt dui, at
+            elementum elit tortor sed neque.</p>
+          <div class="question-icons">
+            <a href="#"><i class="bi bi-arrow-up-circle-fill">upvote(10)</i></a>
+            <a href="#"><i class="bi bi-flag-fill"></i>report</a>
+            <a href="#"><i class="bi bi-star-fill"></i>rate</a>
+          </div>
+          <!-- <button class="btn btn-primary"> Give Answer</button> -->
+
+
+          <button id="answer-btn">Give Answer</button>
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <textarea id="answer-textarea" class="modal-textarea" placeholder="Enter your answer"></textarea>
+              <button id="submit-btn">Submit</button>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="question-footer">
+          <div class="answer-count">
+            <span class="count">5</span>
+            <span class="label">answers</span>
+          </div>
+          <a href="#" class="see-answer-button">See all Answers</a>
+        </div>
+
+        <div class="answer-section">
+          <p class="question-category">Date:May 26, 2023, Answer by:</p>
+          <h3><a href="profile.html"><img src="profile.png" alt="Profile Icon" class="profile-icon"></a>Basant Adhikari</h3>
+          <p class="question-category">User-Category:Teacher</p>
+          <div class="question-post">
+            <!-- <div class="question-icons"> -->
+            <a href="#"><i class="bi bi-arrow-up-circle-fill">upvote(50)</i></a>
+            <a href="#"><i class="bi bi-flag-fill"></i>report</a>
+            <a href="#"><i class="bi bi-star-fill"></i>rate</a>
+            <!-- </div> -->
+          </div>
+          <p class="answer-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan tortor
+            et lacus vehicula, ac tincidunt velit porttitor. Mauris auctor, erat id consectetur aliquam, lacus nisi
+            tincidunt dui, at elementum elit tortor sed neque.<span class="see-more">See More</span></p>
+        </div>
+        <script src="script.js"></script>
+        <div class="question-post">
+          <h3><a href="profile.html"><img src="profile.png" alt="Profile Icon" class="profile-icon"></a>Susan Timalsina</h3>
+          <p class="question-category">User-Category:Teacher</p>
+          <p class="question-category">Question-Category:XYZ</p>
+          <p> May 26, 2023</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan tortor et lacus vehicula, ac
+            tincidunt velit porttitor. Mauris auctor, erat id consectetur aliquam, lacus nisi tincidunt dui, at
+            elementum elit tortor sed neque.</p>
+          <div class="question-icons">
+            <a href="#"><i class="bi bi-arrow-up-circle-fill">upvote(10)</i></a>
+            <a href="#"><i class="bi bi-flag-fill"></i>report</a>
+            <a href="#"><i class="bi bi-star-fill"></i>rate</a>
+          </div>
+          <!-- <button class="btn btn-primary"> Give Answer</button> -->
+
+
+          <button id="answer-btn">Give Answer</button>
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <textarea id="answer-textarea" class="modal-textarea" placeholder="Enter your answer"></textarea>
+              <button id="submit-btn">Submit</button>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="question-footer">
+          <div class="answer-count">
+            <span class="count">5</span>
+            <span class="label">answers</span>
+          </div>
+          <a href="#" class="see-answer-button">See all Answers</a>
+        </div>
+
+        <div class="answer-section">
+          <p class="question-category">Date:May 26, 2023, Answer by:</p>
+          <h3><a href="profile.html"><img src="profile.png" alt="Profile Icon" class="profile-icon"></a>Basant Adhikari</h3>
+          <p class="question-category">User-Category:Teacher</p>
+          <div class="question-post">
+            <!-- <div class="question-icons"> -->
+            <a href="#"><i class="bi bi-arrow-up-circle-fill">upvote(50)</i></a>
+            <a href="#"><i class="bi bi-flag-fill"></i>report</a>
+            <a href="#"><i class="bi bi-star-fill"></i>rate</a>
+            <!-- </div> -->
+          </div>
+          <p class="answer-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan tortor
+            et lacus vehicula, ac tincidunt velit porttitor. Mauris auctor, erat id consectetur aliquam, lacus nisi
+            tincidunt dui, at elementum elit tortor sed neque.<span class="see-more">See More</span></p>
+        </div>
+        <script src="script.js"></script>
+        <div class="question-post">
+          <h3><a href="profile.html"><img src="profile.png" alt="Profile Icon" class="profile-icon"></a>Susan Timalsina</h3>
+          <p class="question-category">User-Category:Teacher</p>
+          <p class="question-category">Question-Category:XYZ</p>
+          <p> May 26, 2023</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan tortor et lacus vehicula, ac
+            tincidunt velit porttitor. Mauris auctor, erat id consectetur aliquam, lacus nisi tincidunt dui, at
+            elementum elit tortor sed neque.</p>
+          <div class="question-icons">
+            <a href="#"><i class="bi bi-arrow-up-circle-fill">upvote(10)</i></a>
+            <a href="#"><i class="bi bi-flag-fill"></i>report</a>
+            <a href="#"><i class="bi bi-star-fill"></i>rate</a>
+          </div>
+          <!-- <button class="btn btn-primary"> Give Answer</button> -->
+
+
+          <button id="answer-btn">Give Answer</button>
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <textarea id="answer-textarea" class="modal-textarea" placeholder="Enter your answer"></textarea>
+              <button id="submit-btn">Submit</button>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="question-footer">
+          <div class="answer-count">
+            <span class="count">5</span>
+            <span class="label">answers</span>
+          </div>
+          <a href="#" class="see-answer-button">See all Answers</a>
+        </div>
+
+        <div class="answer-section">
+          <p class="question-category">Date:May 26, 2023, Answer by:</p>
+          <h3><a href="profile.html"><img src="profile.png" alt="Profile Icon" class="profile-icon"></a>Basant Adhikari</h3>
+          <p class="question-category">User-Category:Teacher</p>
+          <div class="question-post">
+            <!-- <div class="question-icons"> -->
+            <a href="#"><i class="bi bi-arrow-up-circle-fill">upvote(50)</i></a>
+            <a href="#"><i class="bi bi-flag-fill"></i>report</a>
+            <a href="#"><i class="bi bi-star-fill"></i>rate</a>
+            <!-- </div> -->
+          </div>
+          <p class="answer-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan tortor
+            et lacus vehicula, ac tincidunt velit porttitor. Mauris auctor, erat id consectetur aliquam, lacus nisi
+            tincidunt dui, at elementum elit tortor sed neque.<span class="see-more">See More</span></p>
+        </div>
+        <script src="script.js"></script>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 offset-md-10">
+        <div class="user-section">
+          <h2 class="user-heading">Top Contributors</h2>
+          <ul class="user-list">
+            <li class="user-item">
+              <a href="profile.html"> <img src="profile.png" alt="Basant Adhikari"></a>
+              Basant Adhikari
+            </li>
+
+            <li class="user-item">
+              <a href="profile.html"> <img src="profile.png" alt="Basant Adhikari"></a>
+              Basant Adhikari
+            </li>
+            <li class="user-item">
+              <a href="profile.html"> <img src="profile.png" alt="Basant Adhikari"></a>
+              Basant Adhikari
+            </li>
+            <li class="user-item">
+              <a href="profile.html"> <img src="profile.png" alt="Basant Adhikari"></a>
+              Basant Adhikari
+            </li>
+            <li class="user-item">
+              <a href="profile.html"> <img src="profile.png" alt="Basant Adhikari"></a>
+              Basant Adhikari
+            </li>
+            <li class="user-item">
+              <a href="profile.html"> <img src="profile.png" alt="Basant Adhikari"></a>
+              Basant Adhikari
+            </li>
+            <li class="user-item">
+              <a href="profile.html"> <img src="profile.png" alt="Basant Adhikari"></a>
+              Basant Adhikari
+            </li>
+            <li class="user-item">
+              <a href="profile.html"> <img src="profile.png" alt="Basant Adhikari"></a>
+              Basant Adhikari
+            </li>
+            <li class="user-item">
+              <a href="profile.html"> <img src="profile.png" alt="Basant Adhikari"></a>
+              Basant Adhikari
+            </li>
+            <li class="user-item">
+              <a href="profile.html"> <img src="profile.png" alt="Basant Adhikari"></a>
+              Basant Adhikari
+            </li>
+            <li class="user-item">
+              <a href="profile.html"> <img src="profile.png" alt="Basant Adhikari"></a>
+              Basant Adhikari
+            </li>
+            <li class="user-item">
+              <a href="profile.html"> <img src="profile.png" alt="Basant Adhikari"></a>
+              Basant Adhikari
+            </li>
+            <li class="user-item">
+              <a href="profile.html"> <img src="profile.png" alt="Basant Adhikari"></a>
+              Basant Adhikari
+            </li>
+            <li class="user-item">
+              <a href="profile.html"> <img src="profile.png" alt="Basant Adhikari"></a>
+              Basant Adhikari
+            </li>
+            <li class="user-item">
+              <a href="profile.html"> <img src="profile.png" alt="Basant Adhikari"></a>
+              Basant Adhikari
+            </li>
+            <li class="user-item">
+              <a href="profile.html"> <img src="profile.png" alt="Basant Adhikari"></a>
+              Basant Adhikari
+            </li>
+
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
